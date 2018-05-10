@@ -28,7 +28,7 @@ top: 0;
 
 const UserPicture = styled.div`
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 margin: 10px;
@@ -89,12 +89,12 @@ class OwnersList extends Component {
                 </div>
                 <div>
                     <div>
-                        <div>
+                        
 
                             <div>
                                 {this.state.owners.map(owner =>
-                                    <div>
-                                        <div>
+                                    
+                                        
                                             <div>
                                                 <div key={owner.id}>
                                                 </div>
@@ -106,20 +106,20 @@ class OwnersList extends Component {
                                                                     <div><img src={owner.photo_url} /></div>
                                                                 </UserPicture>
                                                                 <div>{owner.name}</div>
-                                                                <div>{owner.busines_name}</div>
-                                                                <div>{owner.busines_description}</div>
+                                                                <div>{owner.business_name}</div>
+                                                                <div>{owner.business_description}</div>
                                                             </Link>
                                                         </div>
-                                                    </UserCard>
+                                                        </UserCard>
                                                 </div>
                                             </div>
 
-                                        </div>
-                                    </div>
+                                        
+                                    
 
                                 )}
                             </div>
-                        </div>
+                        
                     </div>
                 </div>
 

@@ -11,7 +11,7 @@ class Api::OwnersController < ApplicationController
 
   def show
     @owner = Owner.find(params[:id])
-    @stocks = @owners.stocks
+    @stocks = @owner.stocks
    
     render json: {
       owner: @owner,
