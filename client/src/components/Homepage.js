@@ -16,7 +16,7 @@ class Homepage extends Component {
 
                     <div>
                         Welcome to the Homepage!
-                        <Link to="/Owners" style={{ textDecoration: 'none' }}>Business Owners</Link>
+                        <Link to="/owners" style={{ textDecoration: 'none' }}>Business Owners</Link>
                     </div>
             </div>
 
